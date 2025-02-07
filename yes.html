@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+
+    <div class="gif">
+        <div class="tenor-gif-embed" data-postid="11258692392524865779" data-share-method="host" data-aspect-ratio="1.05508" data-width="100%">
+            <a href="https://tenor.com/view/pookie-gif-11258692392524865779">Pookie GIF</a>from 
+            <a href="https://tenor.com/search/pookie-gifs">Pookie GIFs</a></div> 
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+        <h1> Heheheee, I knew it!!💞</h1>
+   
+</div>
+<script>
+    
+function createHeart() {
+    let heart = document.createElement("div");
+    heart.innerHTML = "❤️";
+    heart.classList.add("heart");
+    document.body.appendChild(heart);
+
+    let x = Math.random() * window.innerWidth;
+    let y = Math.random() * window.innerHeight;
+    heart.style.left = `${x}px`;
+    heart.style.top = `${y}px`;
+
+    setTimeout(() => {
+        heart.remove();
+    }, 3000);
+}
+
+setInterval(createHeart, 500);
+</script>
+    
+</body>
+</html>

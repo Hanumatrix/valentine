@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+
+    <div class="gif">
+        <div class="tenor-gif-embed" data-postid="18147022" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+            <a href="https://tenor.com/view/mochi-peach-cat-gif-18147022">Mochi Peach Sticker</a>
+            from <a href="https://tenor.com/search/mochi-stickers">Mochi Stickers</a></div> 
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+        <h1> Give it one more thought!!😳</h1>
+   
+
+    <div class="keys"> 
+        <a href="yes.html" id="yes">Yes</a>
+        <a href="No3.html" id="no">No</a>
+    </div>
+
+</div>
+
+<script>
+    
+    function createHeart() {
+        let heart = document.createElement("div");
+        heart.innerHTML = "❤️";
+        heart.classList.add("heart");
+        document.body.appendChild(heart);
+    
+        let x = Math.random() * window.innerWidth;
+        let y = Math.random() * window.innerHeight;
+        heart.style.left = `${x}px`;
+        heart.style.top = `${y}px`;
+    
+        setTimeout(() => {
+            heart.remove();
+        }, 3000);
+    }
+    
+    setInterval(createHeart, 500);
+    </script>
+    
+</body>
+</html>
